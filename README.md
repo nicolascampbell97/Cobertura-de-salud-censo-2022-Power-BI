@@ -20,9 +20,8 @@
 
 #### Al costado tenemos una tabla con las 3 provincias con mayor porcentaje de personas sin ningún tipo de cobertura de salud son Formosa, Santiago del Estero y Chaco, con más del 50% de su población en dicha condición. 
 
-
-
 ![cobertura_edad](https://github.com/user-attachments/assets/87458b57-150f-44ac-a57e-5482e1d27ffe)
 
 #### Con respecto a la edad, el segundo gráfico de barras compara la cantidad de personas que cuentan con obra social, prepaga o PAMI y las que no cuentan con ningún tipo de cobertura, en cada rango quinquenal de edad. 
-
+#### La tarjeta de la izquierda muestra el porcentaje promedio de cada rango de personas menores de 60 años, sin ninguna cobertura de salud
+#### A los costados tenemos los rangos de edad con menor y mayor porcentaje de cobertura. Se puede observar que los rangos etarios de 20-24 y 25-29 años, más de la mitad no tiene nigún tipo de cobertura, mientras que aquellas personas en edad jubilaoria (mayores a 60 años) tienen un porcentaje de cobertura superior al 90%, debido a la inclusión que genera el PAMI.
