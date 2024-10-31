@@ -53,7 +53,7 @@
 ![codigo_regresion](https://github.com/user-attachments/assets/ea33fb57-2751-45c4-bbe4-a6567ce0b019)
 ![test_bivariado](https://github.com/user-attachments/assets/c7e87087-8b55-4b24-a1b7-a40ba5bdc33d)
 
-#### El P-value es estadísiticamente significativo lo cual me indica que las variables nombradas anteriormente explican bien lo que sucede con el porcentaje de personas sin ningun tipo de cobertura de salud. 
+#### El P-value es estadísiticamente significativo para un nivel de confianza del 95%, lo cual me indica que las variables nombradas anteriormente explican bien lo que sucede con el porcentaje de personas sin ningun tipo de cobertura de salud. 
 #### Por otra parte, el R2 = 0,7263 lo que significa que las variables de actividad y empleo informal, explican en un 72,63% lo que ocurre en el porcentaje de personas sin cobertura.
 
 
