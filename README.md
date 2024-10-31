@@ -1,10 +1,10 @@
 # Proyecto Power BI Salud. Censo 2022
 ## Este proyecto consta de un dashboard en Power BI, que refleja los resultados que arrojados por el Censo 2022 sobre la cobertura de salud de los argentinos, que buscar responder las siguientes preguntas:
-#### 1. ¿Cómo se encuentra la situación de cobertura de salud de los argentinos según el censo de 2022?
-#### 2. ¿Cuánto es el total de personas con cobertura de salud? ¿Y el total de los que no tienen ninguna?
-#### 3. ¿Hay diferencias por provincias?
-#### 4. ¿Hay diferencia de cobertura por edades? ¿Y por sexo?
-#### 5. En caso de haber diferencias ¿Hay variables que puedan explicar las mismas?
+#### ¿Cómo se encuentra la situación de cobertura de salud de los argentinos según el censo de 2022?
+#### ¿Cuánto es el total de personas con cobertura de salud? ¿Y el total de los que no tienen ninguna?
+#### ¿Hay diferencias por provincias?
+#### ¿Hay diferencia de cobertura por edades? ¿Y por sexo?
+#### En caso de haber diferencias ¿Hay variables que puedan explicar las mismas?
 
 #### Descargué los archivos de cobertura de salud según jurisdicción ("c2022_tp_salud_c1") y cobertura de salud según sexo registrado al nacer y grupos quinquenales de edad ("c2022_tp_salud_c2") del censo desde la página del INDEC, en la sección del Censo 2022, disponible en: https://www.indec.gob.ar/indec/web/Nivel4-Tema-2-41-165
 
@@ -40,4 +40,20 @@
 
 ![dispersion2](https://github.com/user-attachments/assets/126d297a-6c15-4763-bc89-5736ae2aa909)
 
-#### Más allá de algunos outliers (como Santa Cruz y Tierra del Fuego) podemos considerar que existe una correlación entre las tasas de actividad y empleo con el acceso a una cobertura de salud. Afirmando así que en aquellas provincias/distritos con mayor tasa de actividad y empleo, por lo tanto, con un porcentaje mayor de la población con acceso al trabajo, el acceso a una cobertura de salud (obra social, prepaga o programa/plan estatal) será mayor y el porcentaje de personas sin cobertura será menor. A mayor posibilidades de obtener empleo, mayores serán las posibilidades de acceder a una cobertura de salud.
+#### Más allá de algunos outliers (como Santa Cruz y Tierra del Fuego) podemos considerar que existe una correlación entre las tasas de actividad y empleo con el acceso a una cobertura de salud. De esta manera, podemos afirmar que en aquellas provincias/distritos con mayor tasa de actividad y empleo, y, por lo tanto, con un porcentaje mayor de la población con acceso al trabajo, el acceso a una cobertura de salud será mayor y el porcentaje de personas sin cobertura será menor. A mayor posibilidades de obtener empleo, mayores serán las posibilidades de acceder a una cobertura de salud.
+
+#### Otra variable explicativa puede ser el nivel de empleo informal de cada provincia, cuyo dataset está disponible en: https://argendata.fund.ar/graficos/informalidad-por-provincia/ :
+
+![dispersion3](https://github.com/user-attachments/assets/8142a456-8115-48fd-80f7-59c0742abc6f)
+
+#### Esta regresión nos muestra que a mayor nivel de empleo informal en una provincia, mayor será el porcentaje de personas sin ningún tipo de cobertura de salud.
+
+#### Para testear estos modelos de regresión lineal, utilicé R para realizar el test F y calcular el R2 a partir de un modelo de regresión bivariado con la tasa de actividad y empleo informal.
+
+![codigo_regresion](https://github.com/user-attachments/assets/ea33fb57-2751-45c4-bbe4-a6567ce0b019)
+![test_bivariado](https://github.com/user-attachments/assets/c7e87087-8b55-4b24-a1b7-a40ba5bdc33d)
+
+#### El P-value es estadísiticamente significativo lo cual me indica que las variables nombradas anteriormente explican bien lo que sucede con el porcentaje de personas sin ningun tipo de cobertura de salud. 
+#### Por otra parte, el R2 = 0,7263 lo que significa que las variables de actividad y empleo informal, explican en un 72,63% lo que ocurre en el porcentaje de personas sin cobertura.
+
+
