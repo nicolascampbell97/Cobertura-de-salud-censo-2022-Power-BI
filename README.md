@@ -55,5 +55,5 @@
 
 #### El P-value es estadísiticamente significativo para un nivel de confianza del 95%, lo cual me indica que las variables nombradas anteriormente explican bien lo que sucede con el porcentaje de personas sin ningun tipo de cobertura de salud. 
 #### Por otra parte, el R2 = 0,7263 lo que significa que las variables de actividad y empleo informal, explican en un 72,63% lo que ocurre en el porcentaje de personas sin cobertura.
-
+#### De acuerdo con este modelo, cuando en un distrito de Argentina la tasa de actividad aumente en un 1%, y la tasa de informalidad se mantenga constante, el porcentaje de personas sin cobertura, va a disminuir en un 1,3%. Asimismo, cuando la tasa de informalidad aumente en un 1%, el porcentaje de personas sin cobertura aumentará en un 0,76%, siempre y cuando la tasa de actividad se mantenga constante. 
 
