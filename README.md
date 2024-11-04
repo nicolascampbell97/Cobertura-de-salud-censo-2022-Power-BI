@@ -48,9 +48,9 @@
 
 #### Esta regresión nos muestra que a mayor nivel de empleo informal en una provincia, mayor será el porcentaje de personas sin ningún tipo de cobertura de salud.
 
-#### Para testear estos modelos de regresión lineal, utilicé R para realizar el test F y calcular el R2 a partir de un modelo de regresión bivariado con la tasa de actividad y empleo informal.
+#### Para testear estos modelos de regresión lineal, utilicé R para realizar el test F y calcular el R2 a partir de un modelo de regresión multivariado con las variables tasa de actividad y empleo informal.
 
-![codigo_regresion](https://github.com/user-attachments/assets/ea33fb57-2751-45c4-bbe4-a6567ce0b019)
+![codigo_regresion](https://github.com/user-attachments/assets/70154731-99a0-45c7-9319-3d5c6e2853c4)
 ![test_bivariado](https://github.com/user-attachments/assets/c7e87087-8b55-4b24-a1b7-a40ba5bdc33d)
 
 #### El P-value es estadísiticamente significativo para un nivel de confianza del 95%, lo cual me indica que las variables nombradas anteriormente explican bien lo que sucede con el porcentaje de personas sin ningun tipo de cobertura de salud. 
