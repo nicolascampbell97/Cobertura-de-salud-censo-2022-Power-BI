@@ -1,5 +1,5 @@
 # Proyecto Power BI Salud. Censo 2022
-## Este proyecto consta de un dashboard en Power BI, que refleja los resultados que arrojados por el Censo 2022 sobre la cobertura de salud de los argentinos, que buscar responder las siguientes preguntas:
+### Este proyecto consta de un dashboard en Power BI, que refleja los resultados que arrojados por el Censo 2022 sobre la cobertura de salud de los argentinos, que buscar responder las siguientes preguntas:
 #### ¿Cómo se encuentra la situación de cobertura de salud de los argentinos según el censo de 2022?
 #### ¿Cuánto es el total de personas con cobertura de salud? ¿Y el total de los que no tienen ninguna?
 #### ¿Hay diferencias por provincias?
