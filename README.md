@@ -6,7 +6,7 @@
 #### ¿Hay diferencia de cobertura por edades? ¿Y por sexo?
 #### En caso de haber diferencias ¿Hay variables que puedan explicar las mismas?
 
-#### Descargué los archivos de cobertura de salud según jurisdicción ("c2022_tp_salud_c1") y cobertura de salud según sexo registrado al nacer y grupos quinquenales de edad ("c2022_tp_salud_c2") del censo desde la página del INDEC, en la sección del Censo 2022, disponible en: https://www.indec.gob.ar/indec/web/Nivel4-Tema-2-41-165
+#### Descargué los archivos de cobertura de salud según jurisdicción ("c2022_tp_salud_c1") y cobertura de salud según sexo registrado al nacer y grupos etario ("c2022_tp_salud_c2") del censo 2022 desde la página del INDEC, disponible en: https://www.indec.gob.ar/indec/web/Nivel4-Tema-2-41-165
 
 
 ## Dashboard 1:
@@ -32,7 +32,7 @@
 
 #### En lo que respecta las diferencias entre los sexos masculinos y femeninos, vemos que no hay grandes desigualdades. Por una mínima diferencia, hay mas mujeres que hombres con obra social, prepaga o PAMI, mientras que dentro de la población sin ningún tipo de cobertura existe una clara paridad entre ambos sexos.
 
-### Gráficos de dispersión
+### Regresiones lineales
 #### De lado derecho del tablero, tenemos dos gráficos de dispersión que correlacionan, por un lado, a la población sin ningún tipo de cobertura de salud y la tasa de actividad (porcentaje entre la población económicamente activa y la población total) de cada distrito y, por otro lado, el porcentaje con algun tipo de cobertura de salud (obra social, prepaga, plan estatal) y la tasa de empleo (porcentaje entre la población ocupada y la población total).
 #### La información de dichas tasas están en el dataset es "Mercado de trabajo 2022 INDEC.xlsx" en el repositorio, que corresponden al tercer trimestre del año 2022. Disponible en: https://www.indec.gob.ar/indec/web/Nivel4-Tema-4-31-58 .
 ![dispersion1](https://github.com/user-attachments/assets/f431ac49-8ff5-4e21-9d58-d649d7193b73)
@@ -54,6 +54,9 @@
 ![test_bivariado](https://github.com/user-attachments/assets/c7e87087-8b55-4b24-a1b7-a40ba5bdc33d)
 
 #### El P-value es estadísiticamente significativo para un nivel de confianza del 95%, lo cual me indica que las variables nombradas anteriormente explican bien lo que sucede con el porcentaje de personas sin ningun tipo de cobertura de salud. 
-#### Por otra parte, el R2 = 0,7263 lo que significa que las variables de actividad y empleo informal, explican en un 72,63% lo que ocurre en el porcentaje de personas sin cobertura.
-#### De acuerdo con este modelo, cuando en un distrito de Argentina la tasa de actividad aumente en un 1%, y la tasa de informalidad se mantenga constante, el porcentaje de personas sin cobertura, va a disminuir en un 1,3%. Asimismo, cuando la tasa de informalidad aumente en un 1%, el porcentaje de personas sin cobertura aumentará en un 0,76%, siempre y cuando la tasa de actividad se mantenga constante. 
+#### Por otra parte, el R2 es igual a 0,7263, lo que significa que las variables de actividad y empleo informal, explican en un 72,63% lo que ocurre en el porcentaje de personas sin cobertura.
+#### De acuerdo con este modelo, cuando en un distrito de Argentina la tasa de actividad aumente en un 1%, y la tasa de informalidad se mantenga constante, el porcentaje de personas sin cobertura va a disminuir en un 1,3%. Asimismo, cuando la tasa de informalidad aumente en un 1%, el porcentaje de personas sin cobertura aumentará en un 0,76%, siempre y cuando la tasa de actividad se mantenga constante. 
 
+## Conclusión:
+#### Actualmente en nuestro país hay más de 16 millones de personas que no tienen ningún tipo de cobertura médica. LA primer variable que puede explicar este fenómenos tiene que ver con la edad. El 40% de los menores de 60 años no poseen obra social, prepaga o plan estatal de cobretura médica, mientras que en la población de adultos mayores a 65 años, más del 90% posee algún tipo de cobertura. 
+#### Otra variable explicativa es el acceso al empleo y, especialmente, al empleo formal. En las provincias con mayores tasas de actividad y empleo, es decir, con mayor población dispuesta a trabajar y ocupada, mayores son los porcetajes de la población con cobertura médica. Además, en aquellas provincias con menores porcentajes de empleo informal, el acceso a una cobertura es mayor. 
